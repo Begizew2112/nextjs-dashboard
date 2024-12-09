@@ -1,6 +1,8 @@
-export const lusitana = {
-    className: 'font-lusitana', // Add the appropriate class name for your font
-    family: 'Lusitana',
-    weights: ['400', '700'],
-  };
-  
+import { Inter, Lusitana } from 'next/font/google';
+ 
+export const inter = Inter({ subsets: ['latin'] });
+ 
+export const lusitana = Lusitana({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
